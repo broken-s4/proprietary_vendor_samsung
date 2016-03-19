@@ -20,13 +20,22 @@ PRODUCT_COPY_FILES += \
 
 # Proprietary files
 PRODUCT_COPY_FILES += \
-	vendor/samsung/celox/proprietary/bin/netmgrd:system/bin/netmgrd.exec \
-	vendor/samsung/celox/proprietary/bin/qcks:system/bin/qcks.exec \
-	vendor/samsung/celox/proprietary/bin/qmiproxy:system/bin/qmiproxy.exec \
-	vendor/samsung/celox/proprietary/lib/hw/sensors.MSM8660_SURF.so:system/lib/hw/sensors.MSM8660_SURF.so \
-	vendor/samsung/celox/proprietary/lib/libakm.so:system/lib/libakm.so \
-	vendor/samsung/celox/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
-	vendor/samsung/celox/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so
+	vendor/samsung/celox/skyrocket/bin/netmgrd:system/variant/skyrocket/bin/netmgrd.exec \
+	vendor/samsung/celox/skyrocket/bin/qcks:system/variant/skyrocket/bin/qcks.exec \
+	vendor/samsung/celox/skyrocket/bin/qmiproxy:system/variant/skyrocket/bin/qmiproxy.exec \
+	vendor/samsung/celox/skyrocket/lib/hw/sensors.MSM8660_SURF.so:system/variant/skyrocket/lib/hw/sensors.MSM8660_SURF.so \
+	vendor/samsung/celox/skyrocket/lib/libakm.so:system/variant/skyrocket/lib/libakm.so \
+	vendor/samsung/celox/skyrocket/lib/libaudcal.so:system/variant/skyrocket/lib/libaudcal.so \
+	vendor/samsung/celox/skyrocket/lib/libril-qc-qmi-1.so:system/variant/skyrocket/lib/libril-qc-qmi-1.so
+
+PRODUCT_COPY_FILES += \
+	vendor/samsung/celox/hercules/bin/netmgrd:system/variant/hercules/bin/netmgrd.exec \
+	vendor/samsung/celox/hercules/bin/qcks:system/variant/hercules/bin/qcks.exec \
+	vendor/samsung/celox/hercules/bin/qmiproxy:system/variant/hercules/bin/qmiproxy.exec \
+	vendor/samsung/celox/hercules/lib/hw/sensors.MSM8660_SURF.so:system/variant/hercules/lib/hw/sensors.MSM8660_SURF.so \
+	vendor/samsung/celox/hercules/lib/libakm.so:system/variant/hercules/lib/libakm.so \
+	vendor/samsung/celox/hercules/lib/libaudcal.so:system/variant/hercules/lib/libaudcal.so \
+	vendor/samsung/celox/hercules/lib/libril-qc-qmi-1.so:system/variant/hercules/lib/libril-qc-qmi-1.so
 
 PRODUCT_COPY_FILES += \
 	vendor/samsung/celox/proprietary/lib/hw/nfc.qcom.so:system/lib/hw/nfc.qcom.so \
